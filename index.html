@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beachy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #033;
+      overflow-x: hidden;
+      /* Mere realistisk hav-farve */
+      background: linear-gradient(to bottom, #bfe9ff 0%, #7ec8e3 40%, #2f8fbd 70%, #1c5d7a 100%);
+    }
+
+    header {
+      background-color: rgba(0, 0, 40, 0.5);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      position: relative;
+      z-index: 2;
+    }
+
+    nav {
+      background: rgba(0, 0, 60, 0.4);
+      padding: 10px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      position: relative;
+      z-index: 2;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 25px;
+      background: rgba(255,255,255,0.9);
+      margin: 30px;
+      border-radius: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    footer {
+      background: rgba(0, 0, 40, 0.6);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+    /* MERE REALISTISKE (ROLIGE) BØLGER */
+    .waves {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      z-index: 1;
+      opacity: 0.7;
+    }
+
+    .waves svg {
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="waves">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,80 C200,60 400,100 600,80 C800,60 1000,100 1200,80 L1200,120 L0,120 Z" fill="#2f8fbd"></path>
+    <path d="M0,90 C200,70 400,110 600,90 C800,70 1000,110 1200,90 L1200,120 L0,120 Z" fill="#1c5d7a" opacity="0.6"></path>
+  </svg>
+</div>
+
+<header>
+  <h1>Beachy 🌊</h1>
+  <p>Velkommen til min strand-hjemmeside</p>
+</header>
+
+<nav>
+  <a href="#">Hjem</a>
+  <a href="#">Om mig</a>
+  <a href="#">Kontakt</a>
+</nav>
+
+<div class="container">
+  <h2>Om mig</h2>
+  <p>Hej! Jeg er ved at lære at lave hjemmesider.</p>
+
+  <h2>Kontakt</h2>
+  <p>Email: minemail@example.com</p>
+</div>
+
+<footer>
+  <p>© 2026 Beachy</p>
+</footer>
+
+</body>
+</html>
